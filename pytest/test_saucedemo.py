@@ -7,8 +7,8 @@ import pytest
 #pytest.mark.only_browser("firefox")
 
 def test_title(page :Page):
-    page.goto("https://www.saucedemo.com/")
-    assert page.title() == "Swag Labs1"
+    page.goto("https://www.saucedemo.com")
+    assert page.title() == "Swag Labs"
 
 def test_inventory(page :Page):
     page.goto("https://www.saucedemo.com/inventory.html")
